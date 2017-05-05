@@ -1,0 +1,6 @@
+.page {
+  min-height: 100vh;
+  background-image: url("http://121.41.52.236/xny-app/image/mainbg.gif");
+  background-size: 100% 100%;
+}
+/*http://121.41.52.236/dpp/skin*/

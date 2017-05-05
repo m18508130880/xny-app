@@ -1,0 +1,29 @@
+<!--pages/user/data/data.wxml-->
+
+<view class="page">
+    <scroll-view scroll-x="true" >
+        <view class="data-top" bindtap="gotoDataReal">实时数据</view>
+        <view class="data-top" bindtap="gotoDataPast">历史数据</view>
+        <view class="data-top" bindtap="gotoDataAlert">告警数据</view>
+        <view class="data-top" bindtap="gotoDataAccSale">销量统计</view>
+        <view class="data-top" bindtap="gotoDataAcc">用量统计</view>
+        <view class="data-top" bindtap="">控制</view>
+    </scroll-view>
+
+    <view wx:if="{{dataUrl == 'dataReal.wxml'}}">
+        <include src="dataReal.wxml"/>
+    </view>
+    <view wx:if="{{dataUrl == 'dataPast.wxml'}}">
+        <include src="dataPast.wxml"/>
+    </view>
+    <view wx:if="{{dataUrl == 'dataAlert.wxml'}}">
+        <include src="dataAlert.wxml"/>
+    </view>
+    <view wx:if="{{dataUrl == 'dataAccSale.wxml'}}">
+        <include src="dataAccSale.wxml"/>
+    </view>
+    <view wx:if="{{dataUrl == 'dataAcc.wxml'}}">
+        <include src="dataAcc.wxml"/>
+    </view>
+
+</view>

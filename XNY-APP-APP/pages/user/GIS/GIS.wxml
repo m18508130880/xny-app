@@ -1,0 +1,9 @@
+<view class="page">
+    <scroll-view class="scroll-tab" scroll-x="true" >
+        <block wx:for="{{id}}" wx:for-index="i">
+            <view id="{{id[i]}}" class="scroll_project" bindtap="gotoData" >{{brief[i]}}</view>
+        </block>
+    </scroll-view>
+    <map id="map" class="bg_map" longitude="{{center.lng}}" latitude="{{center.lat}}" markers="{{markers}}" bindmarkertap="markertap" scale="9">
+    </map>
+</view>

@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/GIS/GIS",
+    "pages/user/data/data"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#268dcd",
+    "navigationBarTitleText": "中新能源LNG信息管理平台",
+    "navigationBarTextStyle":"white"
+  },
+  "debug": true
+}
